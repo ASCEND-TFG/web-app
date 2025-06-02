@@ -1,0 +1,49 @@
+* {
+  color: white;
+}
+
+#main-content {
+  height: 100vh;
+  background-image: url("/main-content-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.nav {
+  background-color: var(--light);
+  padding: 30px 20px;
+  box-shadow: #00000050 0 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.features {
+  background-color: var(--dark);
+  padding: 50px 0;
+}
+
+.features img {
+  scale: 0.8;
+  z-index: -1
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+  margin-top: 45px;
+}
+
+img.screen {
+  max-width: 300px;
+}
+
+footer {
+  background: var(--dark);
+}
+
+footer a {
+  text-decoration: none;
+   font-style: italic;
+}

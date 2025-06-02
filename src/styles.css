@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --bg: #303030;
+  --light: #404040;
+  --dark: #252525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section:not(:last-of-type) {
+  margin-bottom: 120px;
+}
+
+section > div:not(:last-of-type){
+  padding-bottom: 50px;
+}
+
+.background-page {
+  background-color: var(--bg);
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem !important;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem !important;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.white {
+  color: white;
+}
+
+button {
+  background-color: var(--light);
+  padding: 18px 60px;
+  border-color: var(--dark);
+}
+
+body {
+  overflow-y: scroll; /* Always show vertical scrollbar space to prevent content shift */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+  env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+  scrollbar-width: none;
+}
+
+.blur{
+  backdrop-filter: blur(4px);
+}
