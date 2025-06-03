@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  ascend:
+    build:
+      context: .
+      args:
+        - NODE_OPTIONS=--max-old-space-size=512
+    platform: linux/arm/v7  # Keep ARMv7 architecture
+    ports:
+      - "2222:2222"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    networks:
+      - ascend-network
+
+networks:
+  ascend-network:
+    driver: bridge
